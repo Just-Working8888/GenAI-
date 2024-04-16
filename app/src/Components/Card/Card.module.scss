@@ -1,0 +1,29 @@
+@import '../../scss/variables/colors.module.scss';
+
+.Card {
+    width: 100%;
+    background: transparent linear-gradient(140deg, #FFF7FC66 0%, #FFFFFF66 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 3px 3px 6px #EEE5E9;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 14px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    h1 {
+        color: $primary100;
+    }
+
+
+}
+
+@media(min-width:768px) {
+    .Card {
+        width: 30%;
+    }
+}

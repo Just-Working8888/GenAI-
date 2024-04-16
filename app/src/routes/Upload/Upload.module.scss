@@ -1,0 +1,74 @@
+@import "../../scss/variables/colors.module.scss";
+
+.Upload {
+    height: 100vh;
+    background: rgb(47, 86, 218);
+    background: linear-gradient(34deg, rgba(47, 86, 218, 1) 11%, rgba(22, 241, 190, 1) 82%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    &_content {
+        max-width: 450px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &_uploaded {
+            width: 100%;
+            background: #EEE5E900 0% 0% no-repeat padding-box;
+            box-shadow: inset 3px 3px 6px #EEE5E9;
+            border: 3px solid #EEE5E9;
+            border-radius: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 17px;
+            }
+        }
+
+        &_actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+            button {
+                align-items: center;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                width: 45%;
+                background: transparent linear-gradient(135deg, #FFF7FC66 0%, #FFFFFF66 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+                box-shadow: inset 3px 3px 6px #EEE5E9;
+                border-radius: 20px;
+                opacity: 1;
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                font-size: 15px;
+                font-weight: 800;
+                color: $primary100 ;
+                border: none;
+
+            }
+        }
+    }
+
+    .back {
+        font-size: 40px;
+        font-weight: 900;
+        padding: 7px 20px;
+        box-shadow: 0px 0px 20px #08070880;
+        border-radius: 30px;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+    }
+}

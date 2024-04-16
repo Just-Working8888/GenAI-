@@ -1,0 +1,9 @@
+@import "../../scss/variables/colors.module.scss";
+
+.main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}

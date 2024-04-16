@@ -1,0 +1,48 @@
+@import "~antd/dist/reset.css";
+@import "./libs/normalize";
+@import "./variables/colors.module.scss";
+
+//заголовков таблицы
+thead[class*="ant-table-thead"] th {
+  background-color: $white !important;
+  border-top: .5px solid $lightdivider;
+
+  &::before {
+    display: none !important;
+  }
+}
+
+
+
+
+.mainLayout {
+  background: transparent linear-gradient(180deg, #6600FF 0%, #00CC99 100%) 0% 0% no-repeat padding-box;
+}
+
+
+// .ant-drawer .ant-drawer-content {
+//   color: white !important;
+//   fill: white !important;
+//   ;
+//   background-color: rgb(0, 0, 0);
+// }
+
+// .ant-drawer {
+//   .ant-drawer-title {
+//     color: white;
+//   }
+
+//   .ant-drawer-header {
+//     border-bottom: 1px solid white;
+//   }
+
+//   .ant-drawer-mask {
+//     background: rgb(255 255 255 / 45%);
+//   }
+// }
+
+.ant-drawer .ant-drawer-header {
+  border-bottom: none !important;
+
+  button {}
+}
