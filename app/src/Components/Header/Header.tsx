@@ -41,7 +41,7 @@ const HeaderComponent: React.FC = () => {
 
                 </Drawer>
             </header >
-            <div style={{height:'100px'}}></div>~
+            <div style={{height:'100px'}}></div>
             </>
 
     );
