@@ -18,7 +18,6 @@ function App() {
       <Route path='/' element={<Main />}>
         <Route path='/' element={<MainPage />} />
       </Route>
-
       <Route path='*' element={<main className={'errorPage'}><p>Неверный адрес</p></main>} />
     </Routes>
   );

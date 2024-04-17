@@ -1,6 +1,9 @@
 @import '../../scss/variables/colors.module.scss';
 
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
     background: $primary100 0% 0% no-repeat padding-box;
     border-radius: 0px 0px 50px 50px;
     display: flex;

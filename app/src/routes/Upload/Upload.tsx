@@ -28,8 +28,6 @@ const Upload: FC = () => {
             </div>
             <div></div>
         </div>
-
-
     );
 };
 
