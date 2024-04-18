@@ -1,9 +1,10 @@
 import axios from 'axios';
 import auth from './auth';
+import quetions from './quetions'
 
 const instance = axios.create({
   // @ts-ignore
-  baseURL: window.REACT_APP_SERVER_API !== 'REPLACE_REACT_APP_SERVER_API' ? window.REACT_APP_SERVER_API : process.env.REACT_APP_SERVER_API || 'https://codexapi.webtm.ru/api/v1',
+  baseURL: window.REACT_APP_SERVER_API !== 'REPLACE_REACT_APP_SERVER_API' ? window.REACT_APP_SERVER_API : process.env.REACT_APP_SERVER_API || 'https://63d304794abff88834170d21.mockapi.io/',
 })
 
 
@@ -14,11 +15,13 @@ const instance = axios.create({
 // });
 
 const { login, register } = auth
+const { getQuetionById, getQuetions } = quetions
 
 
 const api = {
   login,
   register,
+  ...quetions
 }
 
 export { instance, api };

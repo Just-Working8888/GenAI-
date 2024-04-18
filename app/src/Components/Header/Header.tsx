@@ -14,7 +14,7 @@ const HeaderComponent: React.FC = () => {
      
             <header className={classes.header}>
                 <h1>
-                    OneAI
+                    Опросник
                 </h1>
                 <Protected fallback={
                     <button onClick={() => setOpen(true)}>
@@ -38,7 +38,6 @@ const HeaderComponent: React.FC = () => {
                             Sign in
                         </Button>
                     </form>
-
                 </Drawer>
             </header >
             <div style={{height:'100px'}}></div>
